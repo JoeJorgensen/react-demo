@@ -24,7 +24,11 @@ function App() {
     <div className="App">
      <h1>{x}</h1> 
      <DemoContainer header = 'FlashCard'>
-     <FlashCard/>
+     {/* <FlashCard/> */}
+     <FlashCard question='What is 1+1' answer ='2'/>
+     <FlashCard question='What is 2+2' answer ='4'/>
+     <FlashCard question='What is 4 x 4' answer ='16'/>
+
      </DemoContainer>
       {/* <p onClick={handleClickYo}>click me</p> */}
       <DemoContainer header = 'Keyboard'>

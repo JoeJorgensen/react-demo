@@ -15,3 +15,8 @@ console.log(x)
 // String.fromCharCode(97) 'A'
 // String.fromCharCode(98) 'B'
 // String.fromCharCode(122) 'Z'
+
+// export const onPressBackspace=()=>{
+//     count.value = count.value.substring(0, count.value.length - 1);
+// return onPressBackspace;
+// }

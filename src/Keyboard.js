@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {getAlphabet} from './helpers'
+// import {onPressBackspace} from './helpers'
 // props : {title:string}
 const Keyboard = () => {
     // const [state, setState] = useState(initialState)
@@ -32,19 +33,24 @@ const Keyboard = () => {
         return <button key={char}onClick={()=>add(char)}>{char}</button>
     })
        return jsx
-     
-    
+
+
     
 
     }
-
-
+    // const [count, setCount] = useState('')
+    const onPressBackspace = (char)=>{ 
+        console.log(`${char} clicked`)
+        setCount(count.slice(0, - 1))
+        return onPressBackspace
+    }
+    // const onPressBackspace=()=>{
+    //     count = count.substring(0, count.length - 1);
+    // return onPressBackspace;
+    // }
     //  let letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     return ( 
         <div>
-
-            {/* <h1> {props.x}{props.title}</h1> */}
-            {/* <h1>KEYBOARD</h1> */}
             <p>Type:{count}</p>
             <button onClick={()=> add('A')}>A</button> 
             <button onClick={()=> add('B')}>B</button> 
@@ -72,9 +78,14 @@ const Keyboard = () => {
             <button onClick={()=> add('X')}>X</button> 
             <button onClick={()=> add('Y')}>Y</button> 
             <button onClick={()=> add('Z')}>Z</button> 
-            <button onClick={()=> add(' ')}>SPACE</button> 
+            <button onClick={()=> add(' ')}>SPACE</button>
+            <button onClick={()=> onPressBackspace()}>BACKSPACE</button> 
 
-             <button onClick={()=> setCount('')}>reset</button>
+             <button onClick={()=> setCount('')}>RESET</button>
+            
+
+    
+             
             {
                 // [<p key='1'></p>,<p key='2'>B</p>,<p key='3'>C</p>]
             }
@@ -88,3 +99,4 @@ const Keyboard = () => {
 export default Keyboard
 // you can have many export
 export const x = ''
+
