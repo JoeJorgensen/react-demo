@@ -10,8 +10,9 @@ return <p>{props.answer}</p>
 }
     return(
         <div>
-            <button onClick={()=>setShowQuestion(!showQuestion)}>Answer</button>
             {renderCard()}
+            <button onClick={()=>setShowQuestion(!showQuestion)}>Answer</button>
+            
             
         </div>
     )

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import FlashCard from './FlashCard';
 import DemoContainer from './DemoContainer';
+import ToDo from './ToDo'
 // absolute path from /Users/joejorgensen/Desktop/DPL_DEMO/week1/react-demo/src/...
 // relative is from where you currently at
 
@@ -23,19 +24,19 @@ function App() {
   return (
     <div className="App">
      <h1>{x}</h1> 
-     <DemoContainer header = 'FlashCard'>
-     {/* <FlashCard/> */}
-     <FlashCard question='What is 1+1' answer ='2'/>
-     <FlashCard question='What is 2+2' answer ='4'/>
-     <FlashCard question='What is 4 x 4' answer ='16'/>
 
+     <DemoContainer header = 'FlashCard'>
+     <FlashCard question='What is PI ?' answer ='3.1415'/>
+     <FlashCard question='What is the meaning of life ?' answer ='Undefined'/>
+     <FlashCard question='Who is God ?' answer ='Elon Musk'/>
      </DemoContainer>
       {/* <p onClick={handleClickYo}>click me</p> */}
       <DemoContainer header = 'Keyboard'>
       <Keyboard x={'Message'} title={'KEYBOARD'} />
       </DemoContainer>
       <DemoContainer header = 'To Do:'>
-        <p>TO DO</p>
+        <ToDo hideToDo= '' showToDo= 
+        {['1.) Homework ','2.) Walk Dog ', '3.) Run Errands   ']}/>
       </DemoContainer>
     </div>
   );

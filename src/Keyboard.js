@@ -39,8 +39,7 @@ const Keyboard = () => {
 
     }
     // const [count, setCount] = useState('')
-    const onPressBackspace = (char)=>{ 
-        console.log(`${char} clicked`)
+    const onPressBackspace = ()=>{ 
         setCount(count.slice(0, - 1))
         return onPressBackspace
     }
@@ -51,7 +50,7 @@ const Keyboard = () => {
     //  let letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     return ( 
         <div>
-            <p>Type:{count}</p>
+            <p>Message:{count}</p>
             <button onClick={()=> add('A')}>A</button> 
             <button onClick={()=> add('B')}>B</button> 
             <button onClick={()=> add('C')}>C</button> 
