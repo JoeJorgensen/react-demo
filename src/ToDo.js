@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 const ToDo = (props) => {
-const [showToDo, setShowToDo]=useState(true)
+const [showToDo, setShowToDo]=useState(false)
 // const renderToDo = () => {
 //     if(showToDo){
 //         return <p>{props.hideToDo}</p>

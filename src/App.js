@@ -3,6 +3,7 @@ import './App.css';
 import FlashCard from './FlashCard';
 import DemoContainer from './DemoContainer';
 import ToDo from './ToDo'
+import Counter from './Counter2'
 // absolute path from /Users/joejorgensen/Desktop/DPL_DEMO/week1/react-demo/src/...
 // relative is from where you currently at
 
@@ -30,6 +31,10 @@ function App() {
      <FlashCard question='What is the meaning of life ?' answer ='Undefined'/>
      <FlashCard question='Who is God ?' answer ='Elon Musk'/>
      </DemoContainer>
+     <DemoContainer>
+       <Counter Count />
+     </DemoContainer>
+
       {/* <p onClick={handleClickYo}>click me</p> */}
       <DemoContainer header = 'Keyboard'>
       <Keyboard x={'Message'} title={'KEYBOARD'} />
